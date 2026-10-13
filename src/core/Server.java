@@ -168,13 +168,20 @@ public class Server {
                             <summary>Datos sobre el funcionamoiento del sitio</summary>
                             <p>1. Las divisiones están limitadas a 150000 y -150000 debido al tiempo que se tardaría en procesar las divisiones pequeñas como las de divisor 1, lo cual deja colgada la página. Esto es consecuencia directa de seguir estrictamente el teorema de la división (a = bq + r y 0 ≤ r < |b|) implementado con bucles.</p>
 
-                            <p>2. El cambio de base está limitado al número de caracteres contemplados. Por ejemplo, para base 16 se necesitan los caracteres {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}. En este caso he considerado los caracteres de la A a la Z y @,#,$,^, por lo que la base máxima representable es 41. Si queréis obtener ^ probad a dividir 40/41.</p>
+                            <p>2. El tiempo registrado para calcular la división y la base también incluye el tiempo necesario para mantener el registro de los pasos que ha realizado. El tiempo real sin este "historial" sería algo menor.</p>
 
-                            <p>3. A pesar de que las bases negativas existen matemáticamente, no he logrado implementarlas de forma consistente, así que en esta demo he recortado esa característica. Perdonad las molestias.</p>
+                            <p>3. El cambio de base está limitado al número de caracteres contemplados. Por ejemplo, para base 16 se necesitan los caracteres {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}. En este caso he considerado los caracteres de la A a la Z y @,#,$,^, por lo que la base máxima representable es 41. Si queréis obtener ^ probad a dividir 40/41.</p>
 
-                            <p>4. El host web duerme el servicio tras un tiempo de inactividad, así que es posible que tarde en iniciar la primera vez.</p>
-                            <p>5. Esta aplicación está implementada en Java mediante HttpServer y contenerizada con Docker. No he hecho uso de ningún framework (ej.: Spring Boot) para mantenerlo lo más ligero y menos dependiente de terceros posible.</p>
-                        </details>
+                            <p>4. A pesar de que las bases negativas existen matemáticamente, no he logrado implementarlas de forma consistente, así que en esta demo he recortado esa característica. Perdonad las molestias.</p>
+
+                            <p>5. El host web duerme el servicio tras un tiempo de inactividad, así que es posible que tarde en iniciar la primera vez.</p>
+                            
+                            <p>6. Esta aplicación está implementada en Java mediante HttpServer y contenerizada con Docker. No he hecho uso de ningún framework (ej.: Spring Boot) para mantenerlo lo más ligero y menos dependiente de terceros posible.</p>
+
+                            <hr>
+
+                            </details>
+                        <p>Esto es un MVP (mínimo producto viable). Lamento las molestias. </p>
                     </body>
                     </html>
                     """.formatted(
