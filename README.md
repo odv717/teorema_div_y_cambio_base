@@ -1,0 +1,2 @@
+Este código se ha desarrollado como complemento de una explicación de la asignatura "Álgebra lineal y matemática discreta". El código es optimizable en varios lugares para usar menos memoria/estructuras, así que es susceptible de una refactorización.
+ A pesar de lo anterior, sí cumple el núcleo del problema, realizar divisiones con el "Teorema de la división".  A partir de la implementación del teorema de la división, se realizan los cambios de base.
