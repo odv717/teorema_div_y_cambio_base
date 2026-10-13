@@ -165,7 +165,7 @@ public class Server {
                         <hr>
                         <details>
 
-                            <summary>Datos sobre el funcionamoiento del sitio</summary>
+                            <summary>Datos sobre el funcionamiento del sitio</summary>
                             <p>1. Las divisiones están limitadas a 150000 y -150000 debido al tiempo que se tardaría en procesar las divisiones pequeñas como las de divisor 1, lo cual deja colgada la página. Esto es consecuencia directa de seguir estrictamente el teorema de la división (a = bq + r y 0 ≤ r < |b|) implementado con bucles.</p>
 
                             <p>2. El tiempo registrado para calcular la división y la base también incluye el tiempo necesario para mantener el registro de los pasos que ha realizado. El tiempo real sin este "historial" sería algo menor.</p>
